@@ -10,5 +10,8 @@
         <module name="order-logic" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="solution-lab-2.02-maven" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

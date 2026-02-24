@@ -3,16 +3,21 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ironhack</groupId>
+        <artifactId>lab-java-maven</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>com.ironhack</groupId>
-    <artifactId>solution-lab-2.02-maven</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.ironhack</groupId>
+            <artifactId>order-data</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
-    <modules>
-        <module>order-data</module>
-        <module>order-logic</module>
-    </modules>
+    <artifactId>order-logic</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
